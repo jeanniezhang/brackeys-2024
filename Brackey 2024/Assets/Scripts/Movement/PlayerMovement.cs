@@ -15,8 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     public float sensitivity = 100.0f;
     public float adjustmentFactor = 5.0f;
-    private float moveX, moveY, scroll;
-    public Light2D flashLight;
+    private float moveX, moveY;
     private Quaternion rotation;
     private Vector2 direction;
     private Vector2 moveDirection;
@@ -31,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         ProcessInputs();
+
     }
 
 
@@ -38,7 +38,6 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
-        lightControl();
     }
 
     void ProcessInputs()
@@ -46,8 +45,7 @@ public class PlayerMovement : MonoBehaviour
         //strictly gets 0 or 1
         moveX = Input.GetAxisRaw("Horizontal");
         moveY = Input.GetAxisRaw("Vertical");
-        scroll = Input.GetAxis("Mouse ScrollWheel");
-        Debug.Log(scroll);
+        
         
 
         //used for changing player rotation based on mouse
@@ -67,11 +65,4 @@ public class PlayerMovement : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, sensitivity * Time.deltaTime);
     }
 
-    void lightControl()
-    {
-        if (scroll != 0f) // forward
-        {
-            flashLight.pointLightOuterRadius += adjustmentFactor * scroll;
-        }
-    }
 }
