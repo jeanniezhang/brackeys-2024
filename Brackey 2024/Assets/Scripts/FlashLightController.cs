@@ -6,19 +6,19 @@ using UnityEngine.Rendering.Universal;
 
 public class FlashLightController : MonoBehaviour
 {
-
+    public static FlashLightController instance;
     public float adjustmentFactor = 5.0f;
     private float scroll, timer;
     private float lastRadius = 0;
     public float delay = 0.1f;
     public float sensitivity;
     public Light2D flashLight;
-    private float charge = 100f;
+    public float charge = 100f;
     public TMP_Text chargeText;
     // Start is called before the first frame update
     void Start()
     {
-        
+        instance = this;
     }
     private void FixedUpdate()
     {
