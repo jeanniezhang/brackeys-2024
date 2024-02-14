@@ -44,3 +44,6 @@ TagManager:
   - name: Object
     uniqueID: 2294331553
     locked: 0
+  - name: Interactables
+    uniqueID: 249557185
+    locked: 0
