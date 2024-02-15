@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public Rigidbody2D rb;
-    public GameObject player;
     public float moveSpeed;
     public float sensitivity = 100.0f;
     public float adjustmentFactor = 5.0f;
@@ -19,11 +18,12 @@ public class PlayerMovement : MonoBehaviour
     private Quaternion rotation;
     private Vector2 direction;
     private Vector2 moveDirection;
+    public bool canMove;
 
     // Start is called before the first frame update
     void Start()
     {
- 
+        canMove = true;
     }
 
     //good for processing inputs
@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     //best to be used for physics calculations
     private void FixedUpdate()
     {
-        Move();
+       if (canMove) Move();
     }
 
     void ProcessInputs()

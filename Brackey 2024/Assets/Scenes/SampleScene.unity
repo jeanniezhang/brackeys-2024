@@ -186,6 +186,7 @@ MonoBehaviour:
   moveSpeed: 10
   sensitivity: 100
   adjustmentFactor: 1
+  canMove: 0
 --- !u!4 &33791750
 Transform:
   m_ObjectHideFlags: 0
@@ -9734,7 +9735,7 @@ GameObject:
   - component: {fileID: 733879309}
   - component: {fileID: 733879308}
   m_Layer: 5
-  m_Name: RadioName
+  m_Name: ObjectName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9946,7 +9947,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &976140372
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10018,8 +10019,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12eed6e004afc784c902f96449ad9b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectNameText: {fileID: 0}
-  ObjectDialogueText: {fileID: 0}
+  ObjectNameText: {fileID: 733879308}
+  ObjectDialogueText: {fileID: 1327318582}
+  typeSpeed: 10
 --- !u!1 &1327318580
 GameObject:
   m_ObjectHideFlags: 0
@@ -11479,8 +11481,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactSprite: {fileID: 587567150}
-  dialogueText: {fileID: 0}
-  dialogueController: {fileID: 0}
+  dialogueText: {fileID: 11400000, guid: 4c2b6cd958b16f9478de63ea368f6eaa, type: 2}
+  dialogueController: {fileID: 976140375}
 --- !u!1 &1688206327
 GameObject:
   m_ObjectHideFlags: 0
