@@ -10,7 +10,7 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
 
     private Transform _playerTransform;
 
-    private const float INTERACT_DISTANCE = 5f;
+    private const float INTERACT_DISTANCE = 3f;
 
     private void Start()
     {
@@ -20,7 +20,7 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current.eKey.wasPressedThisFrame)
+        if (Keyboard.current.eKey.wasPressedThisFrame && IsWithinInteractDistance())
         {
             //interact
             Interact();
@@ -41,7 +41,7 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
     //checking distance player to interactable object
     private bool IsWithinInteractDistance()
     {
-        if (Vector2.Distance(_playerTransform.position, transform.position) < 5f)
+        if (Vector2.Distance(_playerTransform.position, transform.position) < INTERACT_DISTANCE)
         {
             return true;
         }

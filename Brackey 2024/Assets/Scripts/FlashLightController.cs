@@ -62,7 +62,7 @@ public class FlashLightController : MonoBehaviour
 
             charge -= Time.deltaTime * flashLight.pointLightOuterRadius * sensitivity;
             timer = 0;
-            chargeText.text = "Charge: " + charge.ToString("F5");
+            chargeText.text = "Charge: " + charge.ToString("F0") + "%";
         } else if (charge <= 0)
         {
             flashLight.intensity = 0;
