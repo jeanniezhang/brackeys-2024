@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody2D rb;
     public float moveSpeed;
-    public float sensitivity = 100.0f;
+    public float sensitivity = 70.0f;
     public float adjustmentFactor = 5.0f;
     private float moveX, moveY;
     private Quaternion rotation;
@@ -45,8 +45,6 @@ public class PlayerMovement : MonoBehaviour
         //strictly gets 0 or 1
         moveX = Input.GetAxisRaw("Horizontal");
         moveY = Input.GetAxisRaw("Vertical");
-        
-        
 
         //used for changing player rotation based on mouse
         direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
@@ -61,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
     //NOTE: in inspector set rigidbody to interpolate, otherwise you get stuttery movement
     void Move()
     {
-        rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        rb.velocity = new Vector2(moveDirection.x * moveSpeed / adjustmentFactor, moveDirection.y * moveSpeed / adjustmentFactor);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, sensitivity * Time.deltaTime);
     }
 
