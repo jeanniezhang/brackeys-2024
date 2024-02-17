@@ -11,12 +11,18 @@ public class AudioManager : MonoBehaviour
     public AudioClip nextDialogue;
     public AudioClip moveCharacter;
     public AudioClip collectBattery;
+    public AudioClip disonnantPiano;
+    public AudioClip suddenSound;
     
 
     private void Start() {
         musicSource.clip = background;
         musicSource.loop = true;
         musicSource.Play();
+    }
+
+    public void StopBackground() {
+        musicSource.Pause();
     }
 
     public void PlaySFX(AudioClip clip) {

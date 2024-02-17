@@ -12,8 +12,6 @@ public class MainMenu : MonoBehaviour
     }
     public void GoToScene(string sceneName) {
         StartCoroutine(waiter(sceneName));
-        // SceneManager.LoadScene(sceneName);
-        // WaitForSeconds(1);
     }
 
     public void QuitApp() {
