@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed5371df55826f42a422a7a56477bc4, type: 3}
   m_Name: Baby_Bear_Day_1_2
   m_EditorClassIdentifier: 
-  speakerName: 
+  speakerName: Baby Bear
   paragraphs:
   - "Goodness Joy, look at all these treasures! Read to me, won\u2019t you?"

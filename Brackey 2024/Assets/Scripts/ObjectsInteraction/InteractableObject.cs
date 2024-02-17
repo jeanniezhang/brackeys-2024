@@ -10,7 +10,7 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
 
     private Transform _playerTransform;
 
-    private const float INTERACT_DISTANCE = 3f;
+    private const float INTERACT_DISTANCE = 1f;
 
     private void Start()
     {

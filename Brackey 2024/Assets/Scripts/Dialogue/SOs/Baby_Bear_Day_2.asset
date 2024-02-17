@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed5371df55826f42a422a7a56477bc4, type: 3}
   m_Name: Baby_Bear_Day_2
   m_EditorClassIdentifier: 
-  speakerName: 
+  speakerName: Baby Bear
   paragraphs:
   - "Oh Joy, you\u2019re awake! There\u2019s so much to do today. This light\u2019s
     been bugged all day, we better FIND A LIGHTBULB and fix it."

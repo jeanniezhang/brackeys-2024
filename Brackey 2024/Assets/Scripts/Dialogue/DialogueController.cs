@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.EventSystems;
+using System;
 
 public class DialogueController : MonoBehaviour
 {
@@ -10,7 +11,11 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI ObjectNameText;
     [SerializeField] private TextMeshProUGUI ObjectDialogueText;
     [SerializeField] private PlayerMovement player;
+
+    [SerializeField] AudioSource SFXSource;
     [SerializeField] private float typeSpeed = 10f;
+
+    AudioManager audioManager;
 
     //the queue is used to load all the paragraphs from the DialogueText class
     //read off each paragraph one at a time and remove them from queue afterwards
@@ -25,6 +30,11 @@ public class DialogueController : MonoBehaviour
 
     private const string HTML_ALPHA = "<color=#00000000>";
     private const float MAX_TYPE_TIME = 0.1f;
+
+    private void Awake () {
+        // find audio manager
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     private void Start()
     {
@@ -51,8 +61,9 @@ public class DialogueController : MonoBehaviour
         //if something in the queue
         if(!isTyping)
         {
+            // play sound
+            audioManager.PlaySFX(audioManager.nextDialogue);
             p = paragraphs.Dequeue();
-
             typeDialogueCoroutine = StartCoroutine(TypeDialogueText(p));
         }
         else
@@ -72,7 +83,7 @@ public class DialogueController : MonoBehaviour
     private void StartConversation(DialogueText dialogueText)
     {
 
-        //activate image
+        //activate image, displays textbox
         if (!gameObject.activeSelf)
         {
             gameObject.SetActive(true);
@@ -122,6 +133,7 @@ public class DialogueController : MonoBehaviour
         //breaking paragraph into letters
         foreach(char c in p.ToCharArray())
         {
+            
             alphaIndex++;
             ObjectDialogueText.text = originalText; //displays all the text at the beginning but we will just make it invisible
 

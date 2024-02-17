@@ -19,6 +19,11 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 direction;
     private Vector2 moveDirection;
     public bool canMove;
+    AudioManager audioManager;
+
+    void Awake() {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     // Start is called before the first frame update
     void Start()

@@ -15,6 +15,7 @@ MonoBehaviour:
   speakerName: Radio
   paragraphs:
   - Testing conversation features
-  - second paragraph here, writing alot so I can test the overflow ability of our
-    speech implementation, this has been interesting to learna nd setup but I don't
-    enitrely understand everything in the tutorial video so I'll recheck it later
+  - 'second paragraph here, writing alot so I can test the overflow ability of our
+    speech implementation, this has been interesting to learna nd setup '
+  - but I don't enitrely understand everything in the tutorial video so I'll recheck
+    it later

@@ -10,14 +10,16 @@ public class GameManager : MonoBehaviour
     public GameState state;
     public static event Action<GameState> onGameStateChanged;
     private AudioSystem audioSystem;
+    // keep track of day
+    public static int currentDay = 50;
     void Awake() {
+        currentDay = 0;
         if (instance == null) {
             instance = this;
         }
         else {
             Destroy(gameObject);
         }
-        
         audioSystem = GetComponent<AudioSystem>();
     }
 
