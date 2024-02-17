@@ -10,8 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ed5371df55826f42a422a7a56477bc4, type: 3}
-  m_Name: Bed
+  m_Name: Page_Text_1
   m_EditorClassIdentifier: 
-  speakerName: 
+  speakerName: Page Text
   paragraphs:
-  - "It\u2019s your bed! It\u2019s nice and safe and the color of cotton candy."
+  - "Feb. 12, 20\u2014 It\u2019s been a few weeks since we came down here with the
+    others. "
+  - None of us know for certain what is happening outside, or if the solar eclipse
+    has anything to do with it.
+  - " I suppose all that matters is that Joy is safe and next to me\u2014 (the rest
+    of the page is ripped)"
