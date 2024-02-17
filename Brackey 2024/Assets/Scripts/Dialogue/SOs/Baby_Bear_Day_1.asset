@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed5371df55826f42a422a7a56477bc4, type: 3}
+  m_Name: Baby_Bear_Day_1
+  m_EditorClassIdentifier: 
+  speakerName: 
+  paragraphs:
+  - "My, there\u2019s just so much to do today, Joy! There\u2019s hardly any food
+    in the pantry so we better go GROCERY SHOPPING."
+  - "Oh, and this light\u2019s been bugged out all day! We have to FIND A LIGHTBULB
+    and fix it."
+  - "And oh, oh, and can you stop by the BOOKSTORE for me? You\u2019ve been reading
+    me the same bedtime story for years!"

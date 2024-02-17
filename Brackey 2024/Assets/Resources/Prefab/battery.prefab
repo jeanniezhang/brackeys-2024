@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6477812944990596468}
   - component: {fileID: 4037264826805892542}
   - component: {fileID: 5649602682798949312}
+  - component: {fileID: 3012801824486843291}
   m_Layer: 0
   m_Name: battery
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 221224246828705467}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.2806456, w: 0.95981145}
-  m_LocalPosition: {x: -0.72, y: -4.11, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1.6828672, y: 1.6828672, z: 1.6828672}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -133,3 +134,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94844d5c56cd1b1458409b19ac7b7866, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flashLight: {fileID: 0}
+--- !u!95 &3012801824486843291
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221224246828705467}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d89392f2688e81c4a9888db5fdf94fd9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
