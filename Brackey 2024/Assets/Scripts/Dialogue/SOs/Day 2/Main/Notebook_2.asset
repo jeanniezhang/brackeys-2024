@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Dad's Notebook
   paragraphs:
-  - "It\u2019s your dad\u2019s notebook. You shouldn\u2019t touch it."
+  - "It\u2019s your dad\u2019s notebook. Dad doesn't like your grubby hands on his
+    things."

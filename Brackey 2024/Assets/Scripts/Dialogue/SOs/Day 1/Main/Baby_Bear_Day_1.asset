@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Baby Bear
   paragraphs:
-  - 'My, there''s just so much to do today, Joy! '
-  - There's hardly any food in the pantry so we better go GROCERY shopping.
-  - Oh, and this light's been bugged out all day! We have to find a LIGHTBULB and
-    fix it.
-  - And can you stop by the BOOKSTORE for me? We've been reading the same bedtime
-    story for years.
+  - Good morning Joy! Did you sleep well?
+  - There's bear-ly any food in the pantry, so we've got to go GROCERY shopping.
+  - And this light's been bugged out all day! We have to find a LIGHTBULB and fix
+    it.
+  - 'And can you stop by the BOOKSTORE for me and see what''s new? '
   - You're the best, Joy!

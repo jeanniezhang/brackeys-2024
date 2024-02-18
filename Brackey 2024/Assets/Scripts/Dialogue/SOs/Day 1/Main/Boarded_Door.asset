@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: 
   paragraphs:
-  - "What are you doing? You promised dad you wouldn\u2019t open the door until he
-    came home. "
+  - 'What are you doing? You promised dad you wouldn''t open the door until he came
+    home. '

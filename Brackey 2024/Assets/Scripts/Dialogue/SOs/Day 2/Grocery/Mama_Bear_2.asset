@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Mama Bear
   paragraphs:
-  - "Joy, goodness, I thought you wouldn\u2019t show for a minute! Darling, how I\u2019ve
+  - "Joy, goodness, I thought you wouldn\u2019t show for a minute! Darling, how I've
     missed you. \n"
-  - "Now these here, will usually run you a dollar a pop, but you go on and take
-    a dozen, won't you? Hmm? \n"
-  - "What\u2019s on my face? Oh, silly Joy, what are you on about?\n"
+  - 'Now these here, will usually run you a dollar a pop, but you go on and take
+    a dozen, won''t you? '
+  - 'Hmm? '
+  - "What\u2019s on my face? Oh silly, what are you on about?\n"

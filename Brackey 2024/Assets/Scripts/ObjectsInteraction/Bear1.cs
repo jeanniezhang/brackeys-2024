@@ -10,18 +10,32 @@ public class Bear1 : InteractableObject, ITalkable
     [SerializeField] private DialogueText dialogueText_Day_One_End;
     [SerializeField] private DialogueController dialogueController;
 
-    public bool Day_one_end = false;    //need to activate this to true somewhere in the day, maybe after person changes rooms
+    // public bool hasTalkedToMamaBear = false;
+   
+    // public bool hasRetrievedBook = false;
 
     
     public override void Interact()
     {
-        if (!Day_one_end)
+        GameObject papaBear = GameObject.FindGameObjectWithTag("PapaBear");
+        bool hasTalkedToPapaBear = papaBear.GetComponent<PapaBear>().spokenTo;
+        Debug.Log("Papa: " + hasTalkedToPapaBear);
+
+        GameObject mamaBear = GameObject.FindGameObjectWithTag("MamaBear");
+        bool hasTalkedToMamaBear = mamaBear.GetComponent<MamaBear>().spokenTo;
+        Debug.Log("Mama: " + hasTalkedToMamaBear);
+
+        GameObject book = GameObject.FindGameObjectWithTag("Book");
+        bool hasRetrievedBook = book.GetComponent<Book>().spokenTo;
+        Debug.Log("Book: " + hasRetrievedBook);
+        
+
+        if (hasTalkedToPapaBear && hasTalkedToMamaBear && hasRetrievedBook) {
+            Talk(dialogueText_Day_One_End);
+        }
+        else 
         {
             Talk(dialogueText_Day_One_Start);
-        }
-        else
-        {
-            Talk(dialogueText_Day_One_End);
         }
         
     }

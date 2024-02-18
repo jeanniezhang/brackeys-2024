@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Page Text
   paragraphs:
-  - "Mar. 7, 20\u2014 It hears us when we speak. I\u2019ve told Joy to keep quiet,
-    as much as it hurts me.\n"
+  - "Mar. 7\u2014 It hears us when we speak. We must keep quiet.\n"

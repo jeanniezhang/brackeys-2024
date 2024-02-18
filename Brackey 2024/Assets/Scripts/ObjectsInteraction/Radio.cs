@@ -16,7 +16,6 @@ public class Radio : InteractableObject, ITalkable
 
     public void Talk(DialogueText dialogueText)
     {
-        Debug.Log(GameManager.currentDay);
         dialogueController.DisplayNextParagraph(dialogueText);
     }
 }

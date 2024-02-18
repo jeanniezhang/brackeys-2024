@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Book
   paragraphs:
-  - "You found Grimm\u2019s fairy tales! Baby bear will be happy to have something
-    new to read.\n"
-  - "But you shouldn\u2019t just take things while the attendant\u2019s gone. You
-    leave Andersen's fairy tales as payment. \n\n"
+  - 'You found Grimm''s fairy tales! Baby bear will be happy to have something new
+    to read.
+
+'
+  - "You shouldn't just take things while the attendant's gone so you leave Andersen's
+    fairy tales as payment. \n\n"

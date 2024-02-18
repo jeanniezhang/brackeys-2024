@@ -15,4 +15,7 @@ MonoBehaviour:
   speakerName: 
   paragraphs:
   - "It\u2019s a door. "
+  - . . .
+  - . . . . . .
+  - . . . . . . . . .
   - You open the door.

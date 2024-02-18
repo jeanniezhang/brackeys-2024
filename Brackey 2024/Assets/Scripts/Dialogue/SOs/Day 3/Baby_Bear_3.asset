@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: 
   paragraphs:
-  - "Baby bear isn\u2019t real. "
+  - 'Baby bear isn''t real. '
   - 'There is nothing to do today. '
+  - There is never anything to do here.

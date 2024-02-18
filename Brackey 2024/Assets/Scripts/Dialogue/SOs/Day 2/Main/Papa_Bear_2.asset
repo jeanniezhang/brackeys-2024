@@ -15,6 +15,8 @@ MonoBehaviour:
   speakerName: Papa Bear
   paragraphs:
   - 'Howdy, boss-man. Nothing to report today. Everything is looking just fine. '
-  - "Oh, but would you look at this, I found a thing or two you might need. Aren\u2019t
-    I the best?\n"
+  - 'Oh, but would you look at this, I found a thing or two you might need. Aren''t
+    I the best?
+
+'
   - "You receive a LIGHTBULB from Papa Bear. \n\n"

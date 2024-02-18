@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: 
   paragraphs:
-  - "Baby bear isn\u2019t real. \n"
+  - "Baby bear isn't real. \n"
   - 'Mama bear isn''t real. '
-  - "Papa bear isn\u2019t real. "
+  - 'Papa bear isn''t real. '
   - 'You are alone here. You read to yourself and fall asleep.
 
 '

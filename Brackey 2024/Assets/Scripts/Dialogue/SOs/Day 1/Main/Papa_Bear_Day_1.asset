@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Papa Bear
   paragraphs:
-  - "Hey there boss! Nothing to report today. All\u2019s looking fine out here. \n"
-  - 'Oh, but get this, I found something you might need.
+  - "Hey there boss! Nothing to report today. All is looking fine out here. \n"
+  - 'Oh, but I found something you might need.
 
 '
   - You receive a LIGHTBULB from Papa Bear.

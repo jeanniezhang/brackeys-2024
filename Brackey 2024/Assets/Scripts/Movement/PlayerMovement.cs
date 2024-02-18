@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
         //used for changing player rotation based on mouse
         direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        // Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition));
         rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
 
         //normalized so that regardless of direction player moves at same speed

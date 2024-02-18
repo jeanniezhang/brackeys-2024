@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Audio
+  - MamaBear
+  - PapaBear
+  - Book
   layers:
   - Default
   - TransparentFX

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Page Text
   paragraphs:
-  - "Mar. 4, 20\u2014 It\u2019s very quiet down here. "
-  - 'Some of the university students decided they would go out into the dark and
-    scope things out today. '
+  - "Mar. 4\u2014 It\u2019s very quiet down here. "
+  - 'Some of the others decided they would go out into the dark and scope things
+    out today. '
   - We're all waiting for them to return.

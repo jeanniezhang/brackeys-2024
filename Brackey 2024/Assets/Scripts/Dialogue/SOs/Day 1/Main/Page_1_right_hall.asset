@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Page Text
   paragraphs:
-  - "Feb. 25, 20\u2014 Joy asks me how long we\u2019ll have to be down here."
-  - "I said that we\u2019re playing hide-and-seek from the sun and we both laughed."
+  - "Feb. 25\u2014 Joy asks me how long we'll have to be down here."
+  - I said that we're playing hide-and-seek from the sun!
   - "I don\u2019t know how I would do it without them."
