@@ -10009,7 +10009,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1220645132}
   - component: {fileID: 1220645133}
-  - component: {fileID: 1220645134}
   m_Layer: 0
   m_Name: LevelFader
   m_TagString: Untagged
@@ -10054,21 +10053,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1220645134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1220645130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18b157f88b42246d1804342606b971c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collider: {fileID: 0}
-  sceneName: 
-  animator: {fileID: 0}
 --- !u!1 &1402000586
 GameObject:
   m_ObjectHideFlags: 0
@@ -10720,7 +10704,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1652838016
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10969,7 +10953,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 888664708}
   SFXSource: {fileID: 484238781}
+  SceneName: 
   background: {fileID: 8300000, guid: 3fd8b7e3342b249eab7d508395637bc3, type: 3}
+  endingBackground: {fileID: 0}
   nextDialogue: {fileID: 8300000, guid: bd0541d0c39264a8f84d24d97c2005e1, type: 3}
   moveCharacter: {fileID: 0}
   collectBattery: {fileID: 8300000, guid: f65ae4a729d9344f283e14987f33f574, type: 3}
