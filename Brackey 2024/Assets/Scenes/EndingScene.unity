@@ -230,7 +230,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: He's out there, Joy.
+  m_text: Thanks for playing!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01a84cdbd6aa74295a31a00977af7242, type: 2}
   m_sharedMaterial: {fileID: -5464957325487683607, guid: 01a84cdbd6aa74295a31a00977af7242, type: 2}
@@ -426,7 +426,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <color=red> You have to find him.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01a84cdbd6aa74295a31a00977af7242, type: 2}
   m_sharedMaterial: {fileID: -5464957325487683607, guid: 01a84cdbd6aa74295a31a00977af7242, type: 2}
@@ -453,8 +453,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -773,7 +773,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: How much longer?
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01a84cdbd6aa74295a31a00977af7242, type: 2}
   m_sharedMaterial: {fileID: -5464957325487683607, guid: 01a84cdbd6aa74295a31a00977af7242, type: 2}
@@ -1073,7 +1073,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Aren't you tired?
+  m_text: End
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01a84cdbd6aa74295a31a00977af7242, type: 2}
   m_sharedMaterial: {fileID: -5464957325487683607, guid: 01a84cdbd6aa74295a31a00977af7242, type: 2}
@@ -1212,10 +1212,53 @@ MonoBehaviour:
   m_GameObject: {fileID: 1771367682}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08350ec9f8cde4b88b30469e73e1a8d9, type: 3}
+  m_Script: {fileID: 11500000, guid: 3342532d7d0c24399aab26e326983db4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Game 2
+--- !u!1 &2091703821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2091703823}
+  - component: {fileID: 2091703822}
+  m_Layer: 0
+  m_Name: EndGameLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2091703822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091703821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3342532d7d0c24399aab26e326983db4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2091703823
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091703821}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 397.94635, y: 192.34496, z: -1.9589186}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1224,3 +1267,4 @@ SceneRoots:
   - {fileID: 1260372377}
   - {fileID: 10824135}
   - {fileID: 1771367683}
+  - {fileID: 2091703823}

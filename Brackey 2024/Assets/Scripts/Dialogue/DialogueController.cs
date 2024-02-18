@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.EventSystems;
 using System;
+using UnityEngine.SceneManagement;
 
 public class DialogueController : MonoBehaviour
 {
@@ -52,7 +53,7 @@ public class DialogueController : MonoBehaviour
             }
             else if (conversationEnded && !isTyping)
             {
-                EndConversation();
+                EndConversation(dialogueText);
                 return;
             }
 
@@ -103,7 +104,7 @@ public class DialogueController : MonoBehaviour
         player.rb.velocity = new Vector2(0, 0);
     }
 
-    private void EndConversation()
+    private void EndConversation(DialogueText dialogueText)
     {
         //clear the queue
         paragraphs.Clear();
@@ -111,11 +112,32 @@ public class DialogueController : MonoBehaviour
         //return bool to false
         conversationEnded = false;
 
+        
+        Debug.Log(dialogueText.paragraphs[0]);
+        bool isDay1End = dialogueText.paragraphs[0].Equals("Goodness, look at all these treasures! Read me a story, won't you?");
+        bool isDay2End = dialogueText.paragraphs[0].Equals("\"Goodness, look at all these knick-knacks! Read me a story, won't you?\"");
+        bool isDay3End = dialogueText.paragraphs[0].Equals("It’s a door.");
+        bool isEnd = dialogueText.paragraphs[0].Equals("Who are you?");
+        if (isDay1End) {
+            SceneManager.LoadScene("Black 1", LoadSceneMode.Single);
+        }
+        else if (isDay2End) {
+            SceneManager.LoadScene("Black 2", LoadSceneMode.Single);
+        }
+        else if (isDay3End) {
+            SceneManager.LoadScene("Black 3", LoadSceneMode.Single);
+        }
+        else if (isEnd) {
+            SceneManager.LoadScene("EndingScene", LoadSceneMode.Single);
+        }
+
         //deactivate gameobject
         if (gameObject.activeSelf )
         {
             gameObject.SetActive(false);
         }
+
+
         player.canMove = true;
 
     }

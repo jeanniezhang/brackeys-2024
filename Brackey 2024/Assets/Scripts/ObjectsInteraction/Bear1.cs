@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+
 public class Bear1 : InteractableObject, ITalkable
 {
 
     [SerializeField] private DialogueText dialogueText_Day_One_Start;
     [SerializeField] private DialogueText dialogueText_Day_One_End;
     [SerializeField] private DialogueController dialogueController;
+
+    public int day;
 
     // public bool hasTalkedToMamaBear = false;
    
@@ -35,14 +38,15 @@ public class Bear1 : InteractableObject, ITalkable
         }
         else 
         {
+            //  Talk(dialogueText_Day_One_End);
             Talk(dialogueText_Day_One_Start);
+            
         }
         
     }
 
     public void Talk(DialogueText dialogueText)
     {
-        Debug.Log(GameManager.currentDay);
         dialogueController.DisplayNextParagraph(dialogueText);
         
     }

@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ed5371df55826f42a422a7a56477bc4, type: 3}
-  m_Name: Baby_Bear_Day_1_2
+  m_Name: Ending
   m_EditorClassIdentifier: 
-  speakerName: 
+  speakerName: Joy
   paragraphs:
-  - Goodness, look at all these treasures! Read me a story, won't you?
-  - I just love your stories...
-  - ...
-  - You read to Baby Bear.
-  - The two of you fall asleep together.
+  - Who are you?
+  - Are you the voice I hear at night?
+  - The one who swallowed the sun?
   - . . .
+  - I knew it was you.
+  - I knew, the entire time.
+  - 'Take me with you. '
+  - I don't want to be alone anymore.

@@ -15,12 +15,36 @@ EditorBuildSettings:
     path: Assets/Scenes/Game 0.unity
     guid: 5186dfd158e3746428e10831f5488c72
   - enabled: 1
+    path: Assets/Scenes/CutsceneDay1End.unity
+    guid: 7d942759685ff4382bedcd474b928016
+  - enabled: 1
     path: Assets/Scenes/Game 1.unity
     guid: 8e1fca929535d413893853df0fcf5023
   - enabled: 1
+    path: Assets/Scenes/CutsceneDay2End.unity
+    guid: 8758440669729459da0dec24fef85613
+  - enabled: 1
     path: Assets/Scenes/Game 2.unity
     guid: b883338e902e9494999f778b652f0283
+  - enabled: 0
+    path: Assets/Scenes/Ending - old.unity
+    guid: 57698cdecfa134e40838048532dc8fcf
+  - enabled: 1
+    path: Assets/Scenes/Black.unity
+    guid: 62957c8ac00324c9c8afd89a24eaab0a
+  - enabled: 1
+    path: Assets/Scenes/Black 1.unity
+    guid: ac765fddeeb44449b8c98c667d5921f7
+  - enabled: 1
+    path: Assets/Scenes/Black 2.unity
+    guid: 519c470ed69cd4c1ca42f59bbdfe91de
+  - enabled: 1
+    path: Assets/Scenes/Black 3.unity
+    guid: 9aedca5136689498d8ae61dc78453d81
   - enabled: 1
     path: Assets/Scenes/Ending.unity
-    guid: 57698cdecfa134e40838048532dc8fcf
+    guid: 9641dbaa43903430693bd2df5b67a3c6
+  - enabled: 1
+    path: Assets/Scenes/EndingScene.unity
+    guid: 201e94a3437c348a996db6153da77dc8
   m_configObjects: {}

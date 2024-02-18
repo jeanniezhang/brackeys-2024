@@ -15,6 +15,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip collectBattery;
     public AudioClip disonnantPiano;
     public AudioClip suddenSound;
+    public AudioClip sad;
     
 
     private void Start() {
