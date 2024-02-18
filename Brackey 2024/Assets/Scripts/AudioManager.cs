@@ -6,8 +6,10 @@ public class AudioManager : MonoBehaviour
 {
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSource;
+    [SerializeField] string SceneName;
 
     public AudioClip background;
+    public AudioClip endingBackground;
     public AudioClip nextDialogue;
     public AudioClip moveCharacter;
     public AudioClip collectBattery;
@@ -16,7 +18,13 @@ public class AudioManager : MonoBehaviour
     
 
     private void Start() {
-        musicSource.clip = background;
+        if (SceneName != "Ending") {
+            musicSource.clip = background;
+        }
+        else {
+            musicSource.clip = endingBackground;
+        }
+        
         musicSource.loop = true;
         musicSource.Play();
     }
