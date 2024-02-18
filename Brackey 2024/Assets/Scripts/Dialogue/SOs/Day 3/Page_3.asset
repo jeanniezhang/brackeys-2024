@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed5371df55826f42a422a7a56477bc4, type: 3}
   m_Name: Page_3
   m_EditorClassIdentifier: 
-  speakerName: Page Text
+  speakerName: 
   paragraphs:
-  - "I KNOW THE TRUTH I KNOW THE TRUTH I KNOW THE TRUTH I KNOW THE\u2014\n"
+  - 'Dad''s notebook is flipped to the very last page:'
+  - '"I know the truth."'
