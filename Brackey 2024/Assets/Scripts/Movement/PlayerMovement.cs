@@ -9,7 +9,7 @@ using UnityEditor.Experimental.GraphView;
 
 public class PlayerMovement : MonoBehaviour
 {
-
+    [SerializeField] private Light2D m_Light;
     public Rigidbody2D rb;
     public float moveSpeed;
     public float sensitivity = 70.0f;
@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 direction;
     private Vector2 moveDirection;
     public bool canMove;
+    [SerializeField] private Animator animator;
     AudioManager audioManager;
 
     void Awake() {
@@ -54,10 +55,26 @@ public class PlayerMovement : MonoBehaviour
         //used for changing player rotation based on mouse
         direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
 
         //normalized so that regardless of direction player moves at same speed
         moveDirection = new Vector2(moveX, moveY).normalized;
+
+        if(moveDirection.x != 0 || moveDirection.y != 0)
+        {
+            animator.SetFloat("X", moveDirection.x);
+            animator.SetFloat("Y", moveDirection.y);
+
+            animator.SetBool("isWalking", true);
+            
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+        }
+
+
     }
 
 
@@ -65,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
     void Move()
     {
         rb.velocity = new Vector2(moveDirection.x * moveSpeed / adjustmentFactor, moveDirection.y * moveSpeed / adjustmentFactor);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, sensitivity * Time.deltaTime);
+        m_Light.transform.rotation = Quaternion.Slerp(m_Light.transform.rotation, rotation, sensitivity * Time.deltaTime);
     }
 
 }
